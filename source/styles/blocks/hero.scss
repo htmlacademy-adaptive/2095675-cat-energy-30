@@ -1,0 +1,15 @@
+.hero {
+  color: $white;
+}
+
+.hero__wrapper {
+  background-color: $basic-green;
+}
+
+.hero__text {
+  font-family: $title-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

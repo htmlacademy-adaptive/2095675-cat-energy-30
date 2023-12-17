@@ -10,10 +10,10 @@ img {
   object-fit: contain;
 }
 
-html {
-
-}
-
 body {
-  
+  margin: 0;
+  font-family: $base-font;
+  color: $text-grey;
+  font-size: 14px;
+  line-height: 18px;
 }
