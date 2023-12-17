@@ -1,0 +1,21 @@
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  color: $title-grey;
+  font-family: $title-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--show-more {
+    color: #111111;
+  }
+}
+
+.product__content {
+  font-size: 12px;
+  line-height: 16px;
+}
