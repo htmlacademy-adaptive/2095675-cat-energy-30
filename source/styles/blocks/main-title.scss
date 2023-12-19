@@ -1,0 +1,11 @@
+.main-title {
+  font-family: $title-font;
+  color: $black;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  &--light {
+    color: $white;
+  }
+}

@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  margin: 0;
+  font-family: $base-font;
+  color: $text-grey;
+  font-size: 14px;
+  line-height: 18px;
+}

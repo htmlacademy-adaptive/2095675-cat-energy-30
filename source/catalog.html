@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon_32x32.ico">
-  <link rel="icon" href="./images/favicons/favicon-32x32.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+  <link rel="icon" href="favicons/favicon-32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -16,7 +16,7 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="./index.html">
+      <a class="main-header__logo" href="index.html">
         <svg class="main-header__logo-image logo-image" width="34" height="38" viewBox="0 0 34 38" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_15082_512)">
@@ -94,7 +94,7 @@
     <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
+          <a class="main-nav__link" href="index.html">
             главная
           </a>
         </li>
@@ -113,7 +113,7 @@
   </header>
 
   <main class="catalog-container">
-    <h1 class="catalog-container__title inner-title">Каталог продукции</h1>
+    <h1 class="catalog-container__title main-title">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог основной продукции</h2>
       <ul class="catalog__list">
@@ -130,7 +130,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">500 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -157,7 +157,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">1000 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -182,7 +182,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">500 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -209,7 +209,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">1000 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -234,7 +234,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">500 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -261,7 +261,7 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy slim 1000 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">1000 г</dd>
               <dt class="product__key">Вкус</dt>
@@ -286,13 +286,13 @@
             <a class="product__link" href="#">
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
-            <dl class="product__features">
+            <dl class="product__content">
               <dt class="product__key">Масса</dt>
               <dd class="product__value">500 г</dd>
               <dt class="product__key">Вкус</dt>
               <dd class="product__value">Рис</dd>
               <dt class="product__key">Цена</dt>
-              <dd class="product__value">500 ₽ г</dd>
+              <dd class="product__value">500 ₽</dd>
             </dl>
             <a class="product__button button button--primary" href="#">заказать</a>
           </article>
@@ -301,9 +301,9 @@
         <li class="catalog__item">
           <article class="catalog__product product product--show-more">
             <a class="product__link" href="#">
-              <h3 class="product__title">Показать еще 100500 товаров</h3>
+              <h3 class="product__title product__title--show-more">Показать еще 100500 товаров</h3>
             </a>
-            <p class="product__text">На самом деле вкусов гораздо больше!</p>
+            <p class="product__content">На самом деле вкусов гораздо больше!</p>
             <button class="product__button product__button--no-js button button--secondary" type="button">
               показать все
             </button>
@@ -382,7 +382,14 @@
       <address class="contacts__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </address>
-      <img class="contacts__map-image" src="#" alt="Мы на карте" width="320" height="362">
+      <picture>
+        <source type="image/png" width="1440" height="400" media="(min-width: 1440px)"
+          srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source type="image/png" width="768" height="400" media="(min-width: 768px)"
+          srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 2x"
+          alt="Мы на карте" width="320" height="362">
+      </picture>
     </div>
 
     <div class="main-footer__wrapper">
