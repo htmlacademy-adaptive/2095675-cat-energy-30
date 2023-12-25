@@ -1,3 +1,24 @@
+// .promo {
+
+// }
+
+.promo__link {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 290px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/stack.svg#icon-gift");
+    top: 65px;
+    right: 115px;
+  }
+}
+
 .promo__image {
   background-color: $basic-green;
 }
