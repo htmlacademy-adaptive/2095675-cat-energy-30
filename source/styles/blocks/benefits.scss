@@ -5,3 +5,37 @@
   font-weight: 400;
   line-height: 40px;
 }
+
+.benefits__list {
+  @include list-reset;
+  position: relative;
+}
+
+.benefits__item {
+  display: flex;
+}
+
+.benefits__decor {
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 24px 28px;
+
+  &--leaf {
+    background-image: url("../../images/icons/stack.svg#icon-leaf");
+  }
+
+  &--glass {
+    background-image: url("../../images/icons/stack.svg#icon-glass");
+  }
+
+  &--fork {
+    background-image: url("../../images/icons/stack.svg#icon-fork");
+  }
+
+  &--clock {
+    background-image: url("../../images/icons/stack.svg#icon-clock");
+  }
+}

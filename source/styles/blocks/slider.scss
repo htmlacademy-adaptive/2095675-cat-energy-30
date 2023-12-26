@@ -1,3 +1,16 @@
-// .slider {
+.slider__button {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #666666;
+  border-width: 2px;
+  border-color: #666666;
+  background-color: $white;
 
-// }
+  &:hover {
+    color: $basic-green;
+    border-color: $basic-green;
+  }
+}
