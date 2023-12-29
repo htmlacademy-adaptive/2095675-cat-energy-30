@@ -3,4 +3,34 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__link {
+  display: block;
+  align-self: center;
+  padding: 14px;
+}
+
+.main-header__link-img {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__menu-toggle {
+    display: none;
+  }
 }
