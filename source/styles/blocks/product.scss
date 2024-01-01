@@ -1,3 +1,16 @@
+.product {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product__img-wrapper {
+  display: flex;
+  min-width: 140px;
+  justify-content: center;
+}
+
 .product__title {
   color: $title-grey;
   font-family: $title-font;
@@ -14,4 +27,8 @@
 .product__content {
   font-size: 12px;
   line-height: 16px;
+}
+
+.product__button {
+  grid-column: 1/-1;
 }
