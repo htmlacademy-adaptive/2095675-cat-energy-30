@@ -45,6 +45,17 @@
   text-transform: uppercase;
   margin: 0;
   padding-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program__description {
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
 
 .program__link {

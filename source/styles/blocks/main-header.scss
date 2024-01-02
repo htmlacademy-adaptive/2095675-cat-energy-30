@@ -8,6 +8,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 
@@ -74,6 +83,10 @@
     width: 24px;
     background-color: $black;
     transform: rotate(-90deg);
+  }
+
+  &--nojs {
+    visibility: hidden;
   }
 
   @media (min-width: $tablet-width) {

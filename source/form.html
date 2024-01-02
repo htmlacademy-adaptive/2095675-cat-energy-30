@@ -14,8 +14,8 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container">
-    <div class="main-header__wrapper">
+  <header class="main-header">
+    <div class="main-header__wrapper container">
       <a class="main-header__link main-header__link-img" href="index.html" aria-label="на главную">
         <picture>
           <source type="image/svg+xml" width="70" height="59" media="(min-width: 1280px)"
@@ -34,7 +34,8 @@
         </svg>
         <span class="visually-hidden">Логотип cat energy текстом</span>
       </a>
-      <button class="main-header__menu-toggle main-header__menu-toggle--closed" type="button">
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
+        <span class="main-header__burger"></span>
         <span class="visually-hidden">Показать меню</span>
       </button>
     </div>
@@ -136,7 +137,7 @@
         </ul>
       </fieldset>
 
-      <button class="submit-form__button button button--primary" type="submit">
+      <button class="submit-form__button button button--primary button--big" type="submit">
         отправить заявку
       </button>
       <span class="submit-form__info">* — Обязательные поля</span>

@@ -10,6 +10,13 @@
   border: none;
   padding: 0;
 
+  &--big {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
   &--secondary {
     color: $title-grey;
     background-color: $basic-grey;
