@@ -12,6 +12,10 @@
   }
 }
 
+.subcatalog__list {
+  @include list-reset;
+}
+
 .subcatalog__subtitle {
   font-family: $title-font;
   color: $title-grey;

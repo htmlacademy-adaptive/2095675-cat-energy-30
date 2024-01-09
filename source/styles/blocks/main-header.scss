@@ -38,6 +38,15 @@
 .main-header__link-img {
   padding-left: 0;
   padding-right: 0;
+  min-width: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 70px;
+  }
 }
 
 .main-header__toggle {
