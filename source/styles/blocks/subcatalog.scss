@@ -5,6 +5,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.subcatalog__list {
+  @include list-reset;
 }
 
 .subcatalog__subtitle {
@@ -14,8 +23,18 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .subcatalog__features {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

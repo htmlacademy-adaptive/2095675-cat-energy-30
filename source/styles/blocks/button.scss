@@ -8,7 +8,16 @@
   line-height: 20px;
   text-align: center;
   border: none;
-  padding: 0;
+  padding: 10px 0;
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
 
   &--secondary {
     color: $title-grey;

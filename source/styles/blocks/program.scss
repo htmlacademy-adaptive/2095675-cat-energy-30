@@ -1,16 +1,17 @@
 .program {
   background-color: $basic-grey;
   position: relative;
+  padding: 30px 30px 18px 20px;
 }
 
 .program__decor {
   background-color: $basic-green;
   position: absolute;
+  top: 24px;
+  left: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 20px;
-  margin-top: 24px;
 
   &--slim::after {
     position: absolute;
@@ -43,7 +44,18 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 80px;
+  padding-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program__description {
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
 
 .program__link {
