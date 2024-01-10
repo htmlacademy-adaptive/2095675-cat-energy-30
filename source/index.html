@@ -15,56 +15,60 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper container">
-      <a class="main-header__link main-header__link-img" href="index.html" aria-label="на главную">
-        <picture>
-          <source type="image/svg+xml" width="70" height="59" media="(min-width: 1280px)"
-            srcset="../../images/cat-logo-desktop.svg">
-          <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)"
-            srcset="../../images/cat-logo-tablet.svg">
-          <img class="main-header__logo-image logo-image" width="34" height="38" alt="Логотип cat energy"
-            src="../../images/cat-logo-mobile.svg">
-        </picture>
-      </a>
+    <div class="container">
+      <div class="main-header__flex-wrapper">
+        <div class="main-header__wrapper">
+          <a class="main-header__link main-header__link-img" href="index.html" aria-label="на главную">
+            <picture>
+              <source type="image/svg+xml" width="70" height="59" media="(min-width: 1280px)"
+                srcset="../../images/cat-logo-desktop.svg">
+              <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)"
+                srcset="../../images/cat-logo-tablet.svg">
+              <img class="main-header__logo-image logo-image" width="34" height="38" alt="Логотип cat energy"
+                src="../../images/cat-logo-mobile.svg">
+            </picture>
+          </a>
 
-      <a class="main-header__link" href="index.html" aria-label="на главную">
-        <svg class="main-header__logo-text logo-text" width="101" height="18" viewBox="0 0 129 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <use href="../../images/icons/stack.svg#logo-text"></use>
-        </svg>
-        <span class="visually-hidden">Логотип cat energy текстом</span>
-      </a>
-      <button class="main-header__toggle main-header__toggle--closed" type="button">
-        <span class="main-header__burger"></span>
-        <span class="visually-hidden">Показать меню</span>
-      </button>
+          <a class="main-header__link" href="index.html" aria-label="на главную">
+            <svg class="main-header__logo-text logo-text" width="101" height="18" viewBox="0 0 129 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="../../images/icons/stack.svg#logo-text"></use>
+            </svg>
+            <span class="visually-hidden">Логотип cat energy текстом</span>
+          </a>
+          <button class="main-header__toggle main-header__toggle--closed" type="button">
+            <span class="main-header__burger"></span>
+            <span class="visually-hidden">Показать меню</span>
+          </button>
+        </div>
+        <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="index.html">
-            главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
-            каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main-index">
     <section class="hero">
       <div class="hero__wrapper"></div>
-        <h1 class="hero__title main-title">Функциональное питание для котов</h1>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
+      <h1 class="hero__title main-title">Функциональное питание для котов</h1>
+      <p class="hero__text">Занялся собой? Займись котом!</p>
       <picture>
         <source type="image/png" width="552" height="500" media="(min-width: 1280px)"
           srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">

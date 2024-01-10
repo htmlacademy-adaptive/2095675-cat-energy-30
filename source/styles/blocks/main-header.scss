@@ -20,6 +20,13 @@
   }
 }
 
+.main-header__flex-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -102,3 +109,4 @@
     display: none;
   }
 }
+
