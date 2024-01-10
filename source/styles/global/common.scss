@@ -8,6 +8,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 body {
@@ -16,6 +17,13 @@ body {
   color: $text-grey;
   font-size: 14px;
   line-height: 18px;
+  max-width: 1440px;
+
+  @media (min-width: $tablet-width) {
+    color: $text-grey;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 a {

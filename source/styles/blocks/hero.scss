@@ -1,9 +1,56 @@
 .hero {
   color: $white;
+  position: relative;
+  padding: 27px $padding-mobile $padding-mobile;
 }
 
+//серая подложка и зеленый кот
 .hero__wrapper {
-  background-color: $basic-green;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 302px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, #4f4f54, #444247);
+  z-index: -2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url("../../images/hero-bg-mobile@2x.png") 50% 0 no-repeat;
+    z-index: -1;
+    background-size: contain;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (max-width: $mobile-width-only) {
+    color: $white;
+    text-align: center;
+  }
 }
 
 .hero__text {
@@ -12,4 +59,22 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.hero__image {
+  margin: 0 auto;
+}
+
+.hero__link {
+  display: block;
+  width: 100%;
 }

@@ -5,7 +5,8 @@
   line-height: 36px;
   font-weight: 400;
 
-  &--light {
-    color: $white;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
