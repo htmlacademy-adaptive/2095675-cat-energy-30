@@ -1,5 +1,12 @@
 .demo {
   background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 100px;
+  }
 }
 
 .demo__title {
@@ -8,20 +15,68 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 }
 
+.demo__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.demo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 100px;
+    gap: 168px;
+  }
+}
+
+.demo__lists-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    gap: 42px;
+  }
+}
+
+.demo__list {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  flex-grow: 1;
+}
+
 .demo__key {
+  background-color: #eaeaea;
   font-size: 12px;
   line-height: 12px;
+  align-self: center;
+  width: 80px;
+  margin-top: -10px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 134px;
   }
 }
 
@@ -30,10 +85,17 @@
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
+  border: #cdcdcd solid 2px;
+  border-radius: 3px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-bottom: 24px;
+    min-width: 160px;
   }
 }
 
@@ -44,8 +106,17 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    flex-grow: 1;
+  }
+}
+
+.demo__cost {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
