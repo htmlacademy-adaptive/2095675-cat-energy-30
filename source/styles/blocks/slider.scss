@@ -1,9 +1,24 @@
 .slider {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.slider__grid-wrapper {
   position: relative;
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }
 
 .slider__wrapper {
@@ -12,6 +27,14 @@
   &--after {
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -134px;
   }
 }
 
@@ -37,6 +60,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%, -50%) translateY(-75px);
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -47,6 +74,11 @@
     left: 50%;
     top: -110px;
     transform: translate(-50%);
+
+    @media (min-width: $tablet-width) {
+      height: 236px;
+      top: -236px;
+    }
   }
 
   &::after {
@@ -59,6 +91,11 @@
     left: 50%;
     top: 100%;
     transform: translate(-50%);
+
+    @media (min-width: $tablet-width) {
+      height: 236px;
+      bottom: 236px;
+    }
   }
 
   &:hover,

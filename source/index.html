@@ -139,10 +139,13 @@
     <section class="demo">
       <div class="container">
         <h2 class="demo__title">Живой пример</h2>
-        <p class="demo__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+      </div>
+      <div class="demo__desktop-wrapper">
+      <div class="container">
+        <p class="demo__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16
-          часов в день.
+          16 часов в день.
         </p>
         <div class="demo__wrapper">
           <div class="demo__lists-wrapper">
@@ -160,30 +163,35 @@
             <span class="demo__cost">15 000 РУБ.</span>
           </p>
         </div>
+      </div>
+    </div>
 
-        <div class="slider">
-          <div class="slider__wrapper slider__wrapper--before">
-            <picture>
-              <source type="image/png" width="560" height="512" media="(min-width: 768px)"
-                srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x">
-              <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png"
-                srcset="images/slider-before-mobile@2x.png 2x" alt="Толстый котик до" width="280" height="256">
-            </picture>
+      <div class="slider">
+        <div class="container">
+          <div class="slider__grid-wrapper">
+            <div class="slider__wrapper slider__wrapper--before">
+              <picture>
+                <source type="image/png" width="560" height="512" media="(min-width: 768px)"
+                  srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x">
+                <img class="slider__image slider__image--before" src="images/slider-before-mobile@1x.png"
+                  srcset="images/slider-before-mobile@2x.png 2x" alt="Толстый котик до" width="280" height="256">
+              </picture>
+            </div>
+            <div class="slider__wrapper slider__wrapper--after">
+              <picture>
+                <source type="image/png" width="560" height="512" media="(min-width: 768px)"
+                  srcset="images/slider-after-tablet@1x.png 1x, images/slider-after-tablet@2x.png 2x">
+                <img class="slider__image slider__image--after" src="images/slider-after-tablet@1x.png"
+                  srcset="images/slider-after-tablet@2x.png 2x" alt="Стройный котик после" width="280" height="256">
+              </picture>
+            </div>
+            <button class="slider__button" type="button">
+              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <use href="../../images/icons/stack.svg#slider-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Передвижение ползунка для демонстрации похудевшего кота</span>
+            </button>
           </div>
-          <div class="slider__wrapper slider__wrapper--after">
-            <picture>
-              <source type="image/png" width="560" height="512" media="(min-width: 768px)"
-                srcset="images/slider-after-tablet@1x.png 1x, images/slider-after-tablet@2x.png 2x">
-              <img class="slider__image slider__image--after" src="images/slider-after-tablet@1x.png"
-                srcset="images/slider-after-tablet@2x.png 2x" alt="Стройный котик после" width="280" height="256">
-            </picture>
-          </div>
-          <button class="slider__button" type="button">
-            <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <use href="../../images/icons/stack.svg#slider-arrow"></use>
-            </svg>
-            <span class="visually-hidden">Передвижение ползунка для демонстрации похудевшего кота</span>
-          </button>
         </div>
       </div>
     </section>
