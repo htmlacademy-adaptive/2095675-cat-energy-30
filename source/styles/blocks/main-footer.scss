@@ -1,6 +1,43 @@
+.main-footer {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+  }
+}
+
+.main-footer__map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.main-footer iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
 .main-footer__map-image {
   width: 100%;
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
 .main-footer__wrapper {
