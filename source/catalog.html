@@ -15,49 +15,53 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper container">
-      <a class="main-header__link main-header__link-img" href="index.html" aria-label="на главную">
-        <picture>
-          <source type="image/svg+xml" width="70" height="59" media="(min-width: 1280px)"
-            srcset="../../images/cat-logo-desktop.svg">
-          <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)"
-            srcset="../../images/cat-logo-tablet.svg">
-          <img class="main-header__logo-image logo-image" width="34" height="38" alt="Логотип cat energy"
-            src="../../images/cat-logo-mobile.svg">
-        </picture>
-      </a>
+    <div class="container">
+      <div class="main-header__flex-wrapper">
+        <div class="main-header__wrapper">
+          <a class="main-header__link main-header__link-img" href="index.html" aria-label="на главную">
+            <picture>
+              <source type="image/svg+xml" width="70" height="59" media="(min-width: 1280px)"
+                srcset="../../images/cat-logo-desktop.svg">
+              <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)"
+                srcset="../../images/cat-logo-tablet.svg">
+              <img class="main-header__logo-image logo-image" width="34" height="38" alt="Логотип cat energy"
+                src="../../images/cat-logo-mobile.svg">
+            </picture>
+          </a>
 
-      <a class="main-header__link" href="index.html" aria-label="на главную">
-        <svg class="main-header__logo-text logo-text" width="101" height="18" viewBox="0 0 129 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <use href="../../images/icons/stack.svg#logo-text"></use>
-        </svg>
-        <span class="visually-hidden">Логотип cat energy текстом</span>
-      </a>
-      <button class="main-header__toggle main-header__toggle--closed" type="button">
-        <span class="main-header__burger"></span>
-        <span class="visually-hidden">Показать меню</span>
-      </button>
+          <a class="main-header__link" href="index.html" aria-label="на главную">
+            <svg class="main-header__logo-text logo-text" width="101" height="18" viewBox="0 0 129 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="../../images/icons/stack.svg#logo-text"></use>
+            </svg>
+            <span class="visually-hidden">Логотип cat energy текстом</span>
+          </a>
+          <button class="main-header__toggle main-header__toggle--closed" type="button">
+            <span class="main-header__burger"></span>
+            <span class="visually-hidden">Показать меню</span>
+          </button>
+        </div>
+        <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="index.html">
-            главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
-            каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="catalog-container container">
@@ -339,21 +343,32 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__contacts contacts container">
-      <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </address>
+    <div class="container">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__text">
+          приглашаем<br>к сотрудничеству дилеров!
+        </p>
+        <address class="contacts__address">
+          <span>ул. Большая<br>Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </address>
+      </div>
     </div>
-    <picture>
-      <source type="image/png" width="1440" height="400" media="(min-width: 1440px)"
-        srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-      <source type="image/png" width="768" height="400" media="(min-width: 768px)"
-        srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-      <img class="main-footer__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 2x"
-        alt="Мы на карте" width="320" height="362">
-    </picture>
 
+    <div class="main-footer__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта с нашим местоположением"></iframe>
+      <picture>
+        <source type="image/png" width="1440" height="400" media="(min-width: 1280px)"
+          srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source type="image/png" width="768" height="400" media="(min-width: 768px)"
+          srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="main-footer__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 2x"
+          alt="Мы на карте" width="320" height="362">
+      </picture>
+    </div>
 
     <div class="main-footer__wrapper container">
       <a class="main-footer__logo-link" href="index.html">
