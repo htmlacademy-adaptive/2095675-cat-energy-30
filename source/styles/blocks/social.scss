@@ -1,10 +1,9 @@
 .social {
-  @include list-reset;
   display: flex;
   justify-content: center;
 }
 
 .social__link {
   display: block;
-  padding: 20px;
+  padding: 14px;
 }
