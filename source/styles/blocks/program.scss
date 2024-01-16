@@ -1,7 +1,16 @@
 .program {
   background-color: $basic-grey;
   position: relative;
-  padding: 30px 30px 18px 20px;
+  padding: 30px 30px 4px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 43px 52px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 110px 43px 52px;
+  }
 }
 
 .program__decor {
@@ -13,6 +22,21 @@
   height: 50px;
   border-radius: 50%;
 
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 62px;
+    top: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 48px;
+  }
+
   &--slim::after {
     position: absolute;
     content: "";
@@ -22,6 +46,16 @@
     top: -3px;
     background-image: url("../../images/icons/stack.svg#cat-slim");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--pro::after {
@@ -29,10 +63,24 @@
     content: "";
     width: 67px;
     height: 28px;
-    left: -9px;
+    left: -8px;
     top: 11px;
     background-image: url("../../images/icons/stack.svg#cat-pro");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      left: -32px;
+      top: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 20px;
+      left: -18px;
+    }
   }
 }
 
@@ -44,25 +92,44 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 30px;
   padding-left: 90px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 72px;
   }
 }
 
 .program__description {
+  margin: 0 0 22px;
+
   @media (min-width: $tablet-width) {
     color: $black;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
 .program__link {
   color: $black;
-  text-align: center;
   font-family: $title-font;
+  text-align: left;
+  cursor: pointer;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: block;
 }
