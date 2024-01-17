@@ -1,11 +1,12 @@
 .slider {
   @media (min-width: $tablet-width) {
-    background-color: #eaeaea;
     padding-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 75px;
+    padding-bottom: 0;
+    grid-column: 2/-1;
+    // grid-row: 1/-1;
   }
 }
 
@@ -27,14 +28,6 @@
   &--after {
     display: flex;
     justify-content: flex-end;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: -150px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -134px;
   }
 }
 
@@ -61,7 +54,7 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
-    transform: translate(-50%, -50%) translateY(-75px);
+    transform: translate(-50%, -50%);
   }
 
   &::before {
