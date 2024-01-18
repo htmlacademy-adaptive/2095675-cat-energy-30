@@ -138,15 +138,12 @@
 
     <section class="demo">
       <div class="container">
-        <h2 class="demo__title">Живой пример</h2>
-      </div>
-      <div class="demo__desktop-wrapper">
-        <div class="container">
+        <div class="demo__desktop-wrapper">
+          <h2 class="demo__title">Живой пример</h2>
           <p class="demo__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по
-            16 часов в день.
+            по 16 часов в день.
           </p>
           <div class="demo__wrapper">
             <div class="demo__lists-wrapper">
@@ -167,8 +164,7 @@
         </div>
       </div>
 
-      <div class="slider">
-        <div class="container">
+        <div class="slider">
           <div class="slider__grid-wrapper">
             <div class="slider__wrapper slider__wrapper--before">
               <picture>
@@ -193,85 +189,91 @@
               <span class="visually-hidden">Передвижение ползунка для демонстрации похудевшего кота</span>
             </button>
           </div>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <div class="container">
-      <div class="main-footer__contacts contacts">
-        <p class="contacts__text">
-          приглашаем<br>к сотрудничеству дилеров!
-        </p>
-        <address class="contacts__address">
-          <span>ул. Большая<br>Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
-        </address>
+    <div class="main-footer__contacts-wrapper">
+      <div class="container">
+        <div class="main-footer__contacts contacts">
+          <p class="contacts__text">
+            приглашаем<br>к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            <span>ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="main-footer__map">
+        <picture>
+          <source type="image/png" width="1440" height="400" media="(min-width: 1280px)"
+            srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source type="image/png" width="768" height="400" media="(min-width: 768px)"
+            srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="main-footer__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 2x"
+            alt="Мы на карте" width="320" height="362">
+        </picture>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта с нашим местоположением">
+        </iframe>
       </div>
     </div>
 
-    <div class="main-footer__map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта с нашим местоположением"></iframe>
-      <picture>
-        <source type="image/png" width="1440" height="400" media="(min-width: 1280px)"
-          srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source type="image/png" width="768" height="400" media="(min-width: 768px)"
-          srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="main-footer__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@1x.png 2x"
-          alt="Мы на карте" width="320" height="362">
-      </picture>
-    </div>
+    <div class="main-footer__wrapper">
+      <div class="container">
+        <div class="main-footer__logos">
+          <a class="main-footer__logo-link" href="index.html">
+            <span class="visually-hidden">на главную</span>
+            <svg class="main-footer__logo-text logo-text" width="129" height="24" viewBox="0 0 129 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="../../images/icons/stack.svg#logo-text"></use>
+            </svg>
+          </a>
+          <ul class="main-footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__logo" width="28" height="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <use href="../../images/icons/stack.svg#social-vk"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__logo" width="25" height="19" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <use href="../../images/icons/stack.svg#social-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__logo" width="21" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <use href="../../images/icons/stack.svg#social-telegram"></use>
+                </svg>
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
 
-    <div class="main-footer__wrapper container">
-      <a class="main-footer__logo-link" href="index.html">
-        <span class="visually-hidden">на главную</span>
-        <svg class="main-footer__logo-text logo-text" width="129" height="24" viewBox="0 0 129 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <use href="../../images/icons/stack.svg#logo-text"></use>
-        </svg>
-      </a>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__logo" width="28" height="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              focusable="false">
-              <use href="../../images/icons/stack.svg#social-vk"></use>
+          <a class="main-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="на сайт HTML Academy">
+            <span class="main-footer__htmlacademy-text">HTML Academy</span>
+            <svg class="main-footer__htmlacademy-logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" focusable="false">
+              <use href="../../images/icons/stack.svg#logo-academy"></use>
             </svg>
-            <span class="visually-hidden">Вконтакте</span>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__logo" width="25" height="19" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              focusable="false">
-              <use href="../../images/icons/stack.svg#social-youtube"></use>
-            </svg>
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__logo" width="21" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              focusable="false">
-              <use href="../../images/icons/stack.svg#social-telegram"></use>
-            </svg>
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-
-      <a class="main-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="на сайт HTML Academy">
-        <span class="main-footer__htmlacademy-text">HTML Academy</span>
-        <svg class="main-footer__htmlacademy-logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true" focusable="false">
-          <use href="../../images/icons/stack.svg#logo-academy"></use>
-        </svg>
-      </a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
