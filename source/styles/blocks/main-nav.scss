@@ -59,7 +59,23 @@
       content: "";
       height: 2px;
       background-color: $basic-green;
-      bottom: 0;
+      bottom: 8px;
+      left: 22px;
+      right: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--light {
+      color: $white;
+    }
+
+    &--light.main-nav__link--current::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: $white;
+      bottom: 8px;
       left: 22px;
       right: 22px;
     }

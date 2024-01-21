@@ -44,17 +44,17 @@
         <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="index.html">
+              <a class="main-nav__link main-nav__link--light main-nav__link--current" href="index.html">
                 главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__link--light" href="catalog.html">
                 каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+              <a class="main-nav__link main-nav__link--light" href="form.html">
                 подбор программы
               </a>
             </li>
@@ -66,20 +66,24 @@
 
   <main class="main-index">
     <section class="hero">
-      <div class="hero__wrapper"></div>
-      <h1 class="hero__title main-title">Функциональное питание для котов</h1>
-      <p class="hero__text">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/png" width="552" height="500" media="(min-width: 1280px)"
-          srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
-        <source type="image/png" width="710" height="610" media="(min-width: 768px)"
-          srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
-        <img class="hero__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x"
-          alt="Cat Energy pro с курицей" width="280" height="270">
-      </picture>
-      <a class="hero__link button button--primary button--big" href="catalog.html">
-        подобрать программу
-      </a>
+      <div class="container">
+        <span class="hero__gradient" aria-hidden="true"></span>
+        <div class="hero__wrapper">
+          <h1 class="hero__title main-title">Функциональное питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/png" width="552" height="500" media="(min-width: 1280px)"
+              srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
+            <source type="image/png" width="710" height="610" media="(min-width: 768px)"
+              srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
+            <img class="hero__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x"
+              alt="Cat Energy pro с курицей" width="280" height="270">
+          </picture>
+          <a class="hero__link button button--primary button--big" href="catalog.html">
+            подобрать программу
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="programs container">
