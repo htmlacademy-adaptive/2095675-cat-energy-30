@@ -5,6 +5,7 @@
   position: relative;
   padding: 30px 30px 4px 20px;
   height: 100%;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 43px 52px;
@@ -113,7 +114,13 @@
 }
 
 .program__description {
-  margin: 0 0 22px;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: #d9d9d9 solid 1px;
+    padding-bottom: 22px;
+    min-height: 90px;
+  }
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -126,6 +133,7 @@
 }
 
 .program__link {
+  position: relative;
   color: $black;
   font-family: $title-font;
   text-align: left;
@@ -135,6 +143,35 @@
   text-transform: uppercase;
   padding-top: 14px;
   padding-bottom: 14px;
-  display: block;
   margin-top: auto;
+  width: max-content;
+  max-width: 150px;
+  padding-right: 46px;
+  display: flex;
+
+  &::after {
+    position: absolute;
+    content: "";
+    align-self: center;
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-position: -8px 50%;
+    width: 32px;
+    height: 10px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 58px;
+    max-width: 100%;
+  }
+
+  &:hover::after {
+    background-position: 50% 50%;
+  }
+
+  &:active::after,
+  &:active {
+    opacity: 0.5;
+  }
 }
