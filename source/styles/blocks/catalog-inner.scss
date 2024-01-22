@@ -1,0 +1,22 @@
+.catalog-inner {
+  padding-top: 26px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 88px;
+  }
+}
+
+.catalog-inner__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
+}
