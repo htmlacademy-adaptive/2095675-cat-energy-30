@@ -10,11 +10,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding-top: 24px;
     padding-bottom: 75px;
     background: linear-gradient(to top, #eaeaea 75%, $white 25%);
+  }
+}
+
+.demo__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -38,7 +43,7 @@
   }
 }
 
-.demo__desktop-wrapper {
+.demo__text-wrapper {
   @media (min-width: $desktop-width) {
     padding-right: 228px;
   }
