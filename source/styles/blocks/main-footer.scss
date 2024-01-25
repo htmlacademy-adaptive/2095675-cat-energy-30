@@ -1,3 +1,7 @@
+.main-footer {
+  background-color: $basic-grey;
+}
+
 .main-footer__contacts-wrapper {
   @media (min-width: $desktop-width) {
     padding-top: 95px;
@@ -48,7 +52,6 @@
 }
 
 .main-footer__wrapper {
-  background-color: #f2f2f2;
   padding-top: 40px;
   padding-bottom: 40px;
 
