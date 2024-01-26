@@ -1,0 +1,28 @@
+.fieldset-checkbox__list {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 32px;
+    margin-bottom: 52px;
+  }
+}
+
+.fieldset-checkbox__title {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.fieldset-checkbox__item {
+  display: flex;
+  column-gap: 14px;
+}
+
+.fieldset-checkbox__input {
+  margin: 0;
+}

@@ -44,7 +44,7 @@
         <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="index.html">
+              <a class="main-nav__link" href="index.html">
                 главная
               </a>
             </li>
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+              <a class="main-nav__link main-nav__link--current" href="form.html">
                 подбор программы
               </a>
             </li>
@@ -65,87 +65,111 @@
   </header>
 
   <main class="submit-form-container">
-    <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="submit-form__title main-title">Подбор программы</h1>
-      <p class="submit-form__description">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
-      <fieldset class="submit-form__fieldset">
-        <legend class="visually-hidden">Данные кота</legend>
-        <label class="submit-form__label" for="name">ИМЯ:*</label>
-        <input class="submit-form__input" type="text" name="name" id="name" required placeholder="барсик">
+    <div class="container">
+      <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h1 class="submit-form__title main-title">Подбор программы</h1>
+        <p class="submit-form__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
 
-        <label class="submit-form__label" for="weight">Вес (кг):*</label>
-        <input class="submit-form__input" type="number" name="weight" id="weight" required placeholder="7">
+        <div class="submit-form__wrapper">
+          <fieldset class="submit-form__fieldset submit-form__fieldset--details">
+            <legend class="visually-hidden">Данные кота</legend>
+            <ul class="submit-form__list">
+              <li class="submit-form__item">
+                <label class="submit-form__label" for="name">ИМЯ:*</label>
+                <input class="submit-form__input" type="text" name="name" id="name" required placeholder="барсик">
+              </li>
 
-        <label class="submit-form__label" for="age">Возраст (лет):</label>
-        <input class="submit-form__input" type="number" name="age" id="age" placeholder="7">
-      </fieldset>
+              <li class="submit-form__item">
+                <label class="submit-form__label" for="weight">Вес (кг):*</label>
+                <input class="submit-form__input" type="number" name="weight" id="weight" required placeholder="7">
+              </li>
 
-      <fieldset class="submit-form__fieldset">
-        <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="submit-form__list">
-          <li class="submit-form__item">
-            <input class="submit-form__radio" type="radio" name="program" id="slim" value="slim" checked>
-            <label class="submit-form__label" for="slim">похудение</label>
-          </li>
+              <li class="submit-form__item">
+                <label class="submit-form__label" for="age">Возраст (лет):</label>
+                <input class="submit-form__input" type="number" name="age" id="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-          <li class="submit-form__item">
-            <input class="submit-form__radio" type="radio" name="program" id="pro" value="pro">
-            <label class="submit-form__label" for="pro">Набор массы</label>
-          </li>
+          <fieldset class="submit-form__fieldset submit-form__fieldset--with-border">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="submit-form__list">
+              <li class="submit-form__item">
+                <input class="submit-form__radio" type="radio" name="program" id="slim" value="slim" checked>
+                <label class="submit-form__label" for="slim">похудение</label>
+              </li>
 
-          <li class="submit-form__item">
-            <input class="submit-form__radio" type="radio" name="program" id="dont-know" value="dont-know">
-            <label class="submit-form__label" for="dont-know">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+              <li class="submit-form__item">
+                <input class="submit-form__radio" type="radio" name="program" id="pro" value="pro">
+                <label class="submit-form__label" for="pro">Набор массы</label>
+              </li>
 
-      <fieldset class="submit-form__fieldset">
-        <legend class="submit-form__subtitle">Контактные данные (владельца кота)</legend>
+              <li class="submit-form__item">
+                <input class="submit-form__radio" type="radio" name="program" id="dont-know" value="dont-know">
+                <label class="submit-form__label" for="dont-know">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <label class="submit-form__label" for="email">E-mail:*</label>
-        <input class="submit-form__input" type="email" name="email" id="email" required value="kuklachev@gmail.com">
+        <fieldset class="submit-form__fieldset submit-form__fieldset--contacts">
+          <legend class="submit-form__subtitle">Контактные данные (владельца кота)</legend>
+          <ul class="submit-form__list">
+            <li class="submit-form__item">
+              <label class="submit-form__label" for="email">E-mail:*</label>
+              <input class="submit-form__input" type="email" name="email" id="email" required
+                value="kuklachev@gmail.com">
+            </li>
 
-        <label class="submit-form__label" for="tel">Телефон:*</label>
-        <input class="submit-form__input" type="tel" name="tel" id="tel" required value="8 (960) 900-60-90">
-      </fieldset>
+            <li class="submit-form__item">
+              <label class="submit-form__label" for="tel">Телефон:*</label>
+              <input class="submit-form__input" type="tel" name="tel" id="tel" required value="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
 
+        <div class="submit-form__textarea-wrapper">
+          <label class="submit-form__subtitle" for="about">Комментарий</label>
+          <textarea class="submit-form__textarea" name="about" id="about">Расскажите обо всех повадках кота</textarea>
+        </div>
 
-      <label class="submit-form__subtitle" for="about">Комментарий</label>
-      <textarea class="submit-form__textarea" name="about" id="about">Расскажите обо всех повадках кота</textarea>
+        <fieldset class="submit-form__fieldset fieldset-checkbox">
+          <legend class="submit-form__subtitle fieldset-checkbox__title">Дополнительно</legend>
+          <ul class="submit-form__list fieldset-checkbox__list">
+            <li class="submit-form__item fieldset-checkbox__item">
+              <input class="submit-form__checkbox fieldset-checkbox__input" type="checkbox" name="sweetener"
+                id="sweetener" checked>
+              <label class="submit-form__label" for="sweetener">сахарозаменитель</label>
+            </li>
 
-      <fieldset class="submit-form__fieldset">
-        <legend class="submit-form__subtitle">Дополнительно</legend>
-        <ul class="submit-form__list">
-          <li class="submit-form__item">
-            <input class="submit-form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="submit-form__label" for="sweetener">сахарозаменитель</label>
-          </li>
+            <li class="submit-form__item fieldset-checkbox__item">
+              <input class="submit-form__checkbox fieldset-checkbox__input" type="checkbox" name="water" id="water">
+              <label class="submit-form__label" for="water">питьевая вода</label>
+            </li>
 
-          <li class="submit-form__item">
-            <input class="submit-form__checkbox" type="checkbox" name="water" id="water">
-            <label class="submit-form__label" for="water">питьевая вода</label>
-          </li>
+            <li class="submit-form__item fieldset-checkbox__item">
+              <input class="submit-form__checkbox fieldset-checkbox__input" type="checkbox" name="milk" id="milk">
+              <label class="submit-form__label" for="milk">молоко</label>
+            </li>
 
-          <li class="submit-form__item">
-            <input class="submit-form__checkbox" type="checkbox" name="milk" id="milk">
-            <label class="submit-form__label" for="milk">молоко</label>
-          </li>
+            <li class="submit-form__item fieldset-checkbox__item">
+              <input class="submit-form__checkbox fieldset-checkbox__input" type="checkbox" name="vitamins"
+                id="vitamins">
+              <label class="submit-form__label" for="vitamins">витамины</label>
+            </li>
+          </ul>
 
-          <li class="submit-form__item">
-            <input class="submit-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-            <label class="submit-form__label" for="vitamins">витамины</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <button class="submit-form__button button button--primary button--big" type="submit">
-        отправить заявку
-      </button>
-      <span class="submit-form__info">* — Обязательные поля</span>
-    </form>
+          <div class="submit-form__button-wrapper">
+            <button class="submit-form__button button button--primary button--big" type="submit">
+              отправить заявку
+            </button>
+            <span class="submit-form__info">* — Обязательные поля</span>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </main>
 
   <footer class="main-footer">
